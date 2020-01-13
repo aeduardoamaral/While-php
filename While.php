@@ -1,23 +1,44 @@
 <?php
 $i=0;
-$n=100;
-$v=array($n);
-while($i<$n){
-	echo "Valor da variável i: $i<br>";
+$t=5;
+$v=array($t);
+
+while($i<$t)
+
+{
+	echo "Valor da variável I: $i<br>";
 	$i=$i+1;
 
 }
 
 echo "<br/><hr/><br/>";
+echo "<br/><hr/><br/>";
 
-$g=0;
-while($g<$n){
+
+$i=0;
+while($i<$t)
+
+{
+	$v[$i]=$i;
+	echo "Valor da vairável G: $i<br>";
 	
-	echo "Valor g: $g<br>";
-	
-	$g=$g+1;	
+	$i=$i+1;
+
 }
 
+echo "<br/><hr/><br/>";
+echo "<br/><hr/><br/>";
 
+$i=0;
+
+while($i<$t)
+
+{
+	echo "$v[$i]<br/>";
+	$i++;
+}
+
+echo "<br/><hr/><br/>";
+echo "<br/><hr/><br/>";
 
 ?>
